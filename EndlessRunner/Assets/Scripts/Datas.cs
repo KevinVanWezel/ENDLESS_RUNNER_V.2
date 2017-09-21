@@ -10,7 +10,7 @@ public class Datas : MonoBehaviour {
     private int maxCooldown;
     // Use this for initialization
     void Start () {
-        Speed = 1;
+        Speed = 2.5f;
         Acceleration = 1.5f;
         maxCooldown = 500;
         cooldown = maxCooldown;

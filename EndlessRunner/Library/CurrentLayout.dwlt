@@ -20,7 +20,11 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
+<<<<<<< HEAD
   m_MinSize: {x: 950, y: 542}
+=======
+  m_MinSize: {x: 950, y: 300}
+>>>>>>> 10e1f41df8093315f9fa4f9154df49e37995367b
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -451,9 +455,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 22
+    m_Target: 25.105654
     speed: 2
-    m_Value: 22
+    m_Value: 25.105654
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -527,12 +531,13 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
+<<<<<<< HEAD
   m_LastProjectPath: C:\Users\kevin\Documents\GitHub\ENDLESS_RUNNER_V.2\EndlessRunner
   m_IsLocked: 0
   m_FolderTreeState:
@@ -540,6 +545,15 @@ MonoBehaviour:
     m_SelectedIDs: 9c250000
     m_LastClickedID: 9628
     m_ExpandedIDs: 000000007225000000ca9a3bffffff7f
+=======
+  m_LastProjectPath: C:\Users\vanDo\Documents\GitHub\ENDLESS_RUNNER_V.2\EndlessRunner
+  m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 0c250000
+    m_LastClickedID: 9484
+    m_ExpandedIDs: 00000000b624000000ca9a3bffffff7f
+>>>>>>> 10e1f41df8093315f9fa4f9154df49e37995367b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
