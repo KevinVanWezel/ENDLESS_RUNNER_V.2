@@ -11,8 +11,8 @@ public class Datas : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Speed = 2.5f;
-        Acceleration = 1.5f;
-        maxCooldown = 500;
+        Acceleration = 0.1f;
+        maxCooldown = 1000;
         cooldown = maxCooldown;
 	}
 	
@@ -36,7 +36,7 @@ public class Datas : MonoBehaviour {
                 cooldown = maxCooldown;
                 Debug.Log(Speed);
             }
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(200);
         }
 
     }

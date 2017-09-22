@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class PlatformMovement : MonoBehaviour {
 
-    public Datas data;
+    private GameObject data;
+    private Datas thedata;
     private Rigidbody2D rb2d;
     private bool check = true;
-
-    [SerializeField]
+    
     private float mySpeed;
 	// Use this for initialization
 	void Start () {
+        data = GameObject.FindGameObjectWithTag("TheData");
+        thedata = data.GetComponent<Datas>();
         rb2d = GetComponent<Rigidbody2D>();
     }
 	
@@ -19,11 +21,10 @@ public class PlatformMovement : MonoBehaviour {
 	void Update () {
         if(check == true)
         {
-            mySpeed = data.Speed;
+            mySpeed = thedata.Speed;
             check = false;
         }
         Vector2 direction = (Vector2.left) * mySpeed * Time.fixedDeltaTime;
         rb2d.MovePosition(rb2d.position + direction);
-        Debug.Log(mySpeed);
     }
 }
