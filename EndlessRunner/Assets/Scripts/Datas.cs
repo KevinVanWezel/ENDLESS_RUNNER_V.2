@@ -18,10 +18,10 @@ public class Datas : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        StartCoroutine("Test");
+        StartCoroutine("SpeedAcceleration");
 	}
 
-    private IEnumerator Test()
+    private IEnumerator SpeedAcceleration()
     {
         while (true)
         {

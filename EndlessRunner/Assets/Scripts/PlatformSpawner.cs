@@ -6,6 +6,7 @@ public class PlatformSpawner : MonoBehaviour {
 
     public GameObject Platform;
     public Transform PlatformSpawnplace;
+    [SerializeField]
     private float spawntime = 3;
     private float nextPlatform;
 	
