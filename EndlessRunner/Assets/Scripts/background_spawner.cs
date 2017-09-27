@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformSpawner : MonoBehaviour {
+public class background_spawner : MonoBehaviour {
 
     public GameObject Platform;
     public Transform PlatformSpawnplace;

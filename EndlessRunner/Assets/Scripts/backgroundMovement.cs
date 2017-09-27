@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformMovement : MonoBehaviour {
+public class backgroundMovement : MonoBehaviour {
 
     private GameObject data;
     private Datas thedata;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DeathCollision : MonoBehaviour {
-
+    
 	// Use this for initialization
 	void Start () {
 		
@@ -16,7 +16,10 @@ public class DeathCollision : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other);
-        Destroy(other.gameObject);
+        if(other.tag == "Enemy" || other.tag == "Floor")
+        {
+            Time.timeScale = 0;
+            print("Game over player");
+        }
     }
 }
