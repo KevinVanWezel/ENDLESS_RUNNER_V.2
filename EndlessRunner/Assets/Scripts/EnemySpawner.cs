@@ -14,7 +14,7 @@ public class EnemySpawner : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         spawnbereik = Random.Range(-4f, 3f);
-        Vector2 position = new Vector2(EnemySpawnplace.position.x, spawnbereik);
+        Vector3 position = new Vector3(EnemySpawnplace.position.x, spawnbereik, -1);
         if (Time.time > nextPlatform)
         {
             nextPlatform = Time.time + spawntime;

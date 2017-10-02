@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Datas_background : MonoBehaviour {
+public class DatasBackground : MonoBehaviour {
 
     public float Speed;
     private float Acceleration;
@@ -32,7 +32,7 @@ public class Datas_background : MonoBehaviour {
             }
             else if (cooldown <= 0)
             {
-                Speed += Acceleration;
+                //Speed += Acceleration;
                 cooldown = maxCooldown;
                 Debug.Log(Speed);
             }

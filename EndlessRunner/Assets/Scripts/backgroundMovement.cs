@@ -5,7 +5,7 @@ using UnityEngine;
 public class backgroundMovement : MonoBehaviour {
 
     private GameObject data;
-    private Datas thedata;
+    private DatasBackground thedata;
     private Rigidbody2D rb2d;
     private bool check = true;
     
@@ -13,7 +13,7 @@ public class backgroundMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         data = GameObject.FindGameObjectWithTag("TheData");
-        thedata = data.GetComponent<Datas>();
+        thedata = data.GetComponent<DatasBackground>();
         rb2d = GetComponent<Rigidbody2D>();
     }
 	
