@@ -8,6 +8,7 @@ public class Datas : MonoBehaviour {
     private float Acceleration;
     private int cooldown;
     private int maxCooldown;
+    public Pause stop;
     // Use this for initialization
     void Start () {
         Speed = 2.5f;
@@ -23,9 +24,8 @@ public class Datas : MonoBehaviour {
 
     private IEnumerator SpeedAcceleration()
     {
-        while (true)
+        while (stop.stopEverything == false)
         {
-            //Debug.Log(cooldown);
             if (cooldown > 0)
             {
                 cooldown--;
@@ -34,7 +34,6 @@ public class Datas : MonoBehaviour {
             {
                 Speed += Acceleration;
                 cooldown = maxCooldown;
-                Debug.Log(Speed);
             }
             yield return new WaitForSeconds(200);
         }

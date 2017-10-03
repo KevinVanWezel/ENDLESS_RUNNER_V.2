@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestoryPlatform : MonoBehaviour {
+public class DestoryPastPoint : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        if(this.transform.position.x <= -21)
+        if(this.transform.position.x <= -25)
         {
-            //Debug.Log("Bang");
             Destroy(this.gameObject);
         }
 	}

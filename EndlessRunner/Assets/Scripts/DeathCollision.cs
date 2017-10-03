@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DeathCollision : MonoBehaviour {
-    
-	// Use this for initialization
-	void Start () {
-		
+
+    public bool end;
+    // Use this for initialization
+    void Start () {
+        end = false;
 	}
 	
 	// Update is called once per frame
@@ -18,6 +19,7 @@ public class DeathCollision : MonoBehaviour {
     {
         if(other.tag == "Enemy" || other.tag == "Floor")
         {
+            end = true;
             Time.timeScale = 0;
             print("Game over player");
         }
