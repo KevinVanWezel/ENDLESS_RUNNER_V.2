@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathCollision : MonoBehaviour {
 
@@ -21,7 +22,7 @@ public class DeathCollision : MonoBehaviour {
         {
             end = true;
             Time.timeScale = 0;
-            print("Game over player");
+            SceneManager.LoadScene(2);
         }
     }
 }

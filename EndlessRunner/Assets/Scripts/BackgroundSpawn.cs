@@ -15,10 +15,10 @@ public class BackgroundSpawn : MonoBehaviour {
 	void Update()
    {
        Vector2 position = new Vector2(PlatformSpawnplace.position.x, 0);
-               if (Time.time > nextPlatform)
-                   {
+       if (Time.time > nextPlatform)
+       {
            nextPlatform = Time.time + spawntime;
            Instantiate(Platform, position, PlatformSpawnplace.rotation);
-                   }
-          }
+       }
+   }
 }
