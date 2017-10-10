@@ -15,7 +15,6 @@ public class player_jumping : MonoBehaviour {
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
             if (Input.GetKey(KeyCode.Space) && stop.stopEverything == false)
             {
-                Debug.Log("Space");
                 rb.AddForce(Vector2.up * 20);
             }
     }

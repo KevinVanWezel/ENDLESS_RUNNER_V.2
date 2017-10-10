@@ -10,11 +10,6 @@ public class DeathCollision : MonoBehaviour {
     void Start () {
         end = false;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     void OnTriggerEnter2D(Collider2D other)
     {

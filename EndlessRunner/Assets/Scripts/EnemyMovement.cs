@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour {
 
     private GameObject data;
-    private Datas thedata;
+    private DataEnemy thedata;
     private Rigidbody2D rb2d;
     private bool check = true;
     
@@ -13,7 +13,7 @@ public class EnemyMovement : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         data = GameObject.FindGameObjectWithTag("TheData");
-        thedata = data.GetComponent<Datas>();
+        thedata = data.GetComponent<DataEnemy>();
         rb2d = GetComponent<Rigidbody2D>();
     }
 	

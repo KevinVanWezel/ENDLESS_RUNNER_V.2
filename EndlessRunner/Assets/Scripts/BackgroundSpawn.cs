@@ -5,20 +5,20 @@ using UnityEngine;
 public class BackgroundSpawn : MonoBehaviour { 
 
 
-    public GameObject Platform;
-    public Transform PlatformSpawnplace;
+    public GameObject Background;
+    public Transform BackgroundSpawnplace;
     [SerializeField]
     private float spawntime = 3;
-    private float nextPlatform;
+    private float nextBackground;
 	
 	// Update is called once per frame
 	void Update()
    {
-       Vector2 position = new Vector2(PlatformSpawnplace.position.x, 0);
-       if (Time.time > nextPlatform)
+       Vector2 position = new Vector2(BackgroundSpawnplace.position.x, 0);
+       if (Time.time > nextBackground)
        {
-           nextPlatform = Time.time + spawntime;
-           Instantiate(Platform, position, PlatformSpawnplace.rotation);
+            nextBackground = Time.time + spawntime;
+           Instantiate(Background, position, BackgroundSpawnplace.rotation);
        }
    }
 }

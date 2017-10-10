@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Datas : MonoBehaviour {
+public class DataEnemy : MonoBehaviour {
 
     public float Speed;
     private float Acceleration;
