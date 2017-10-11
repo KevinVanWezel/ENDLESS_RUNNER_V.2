@@ -16,7 +16,7 @@ public class BackGroundMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
-        Vector2 direction = (Vector2.left) * Speed * Time.fixedDeltaTime;
+        Vector2 direction = (Vector2.left) * Speed * Time.deltaTime;
         rb2d.MovePosition(rb2d.position + direction);
     }
 }
