@@ -6,12 +6,11 @@ public class Pause : MonoBehaviour {
 
     public DeathCollision death;
     public bool stopEverything;
-	// Use this for initialization
+
 	void Start () {
         stopEverything = false;
 	}
 	
-	// Update is called once per frame
 	void Update () {
         if (death.end == false)
         {

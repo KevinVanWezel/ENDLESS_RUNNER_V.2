@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class DeathCollision : MonoBehaviour {
 
     public bool end;
-    // Use this for initialization
+
     void Start () {
         end = false;
 	}

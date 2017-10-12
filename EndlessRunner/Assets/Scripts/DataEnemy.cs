@@ -9,15 +9,14 @@ public class DataEnemy : MonoBehaviour {
     private int cooldown;
     private int maxCooldown;
     public Pause stop;
-    // Use this for initialization
+
     void Start () {
         Speed = 2.5f;
         Acceleration = 0.1f;
         maxCooldown = 1000;
         cooldown = maxCooldown;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
         StartCoroutine("SpeedAcceleration");
 	}

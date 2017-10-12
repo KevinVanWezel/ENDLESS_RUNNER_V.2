@@ -9,13 +9,12 @@ public class AntiPlayerCamping : MonoBehaviour {
     private GameObject player;
     private bool inside = true;
     public float timer = 0;
-	// Use this for initialization
+
 	void Start () {
         myself = GetComponent<Transform>();
         player = GameObject.FindGameObjectWithTag("Player");
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		if(inside == true)
         {
