@@ -3,11 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DestoryPastPoint : MonoBehaviour {
+    [SerializeField]
+    private float endpoint;
+    
+    public int ScoreValue;
+    private EnemySpawner spawn;
 
-	// Update is called once per frame
-	void Update () {
-        if(this.transform.position.x <= -25)
+    void Start()
+    {
+        spawn = GameObject.Find("EnemiesSpawner").GetComponent<EnemySpawner>();
+    }
+
+    void Update () {
+        if(this.transform.position.x <= endpoint)
         {
+            spawn.AddScore(ScoreValue);
             Destroy(this.gameObject);
         }
 	}
