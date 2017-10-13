@@ -15,9 +15,11 @@ public class EnemySpawner : MonoBehaviour {
     private float spawnbereik;
     public Text ScoreText;
     public int score;
+    private MyScore myscore;
 
      void Start()
     {
+        myscore = GameObject.FindGameObjectWithTag("TheScore").GetComponent<MyScore>();
         UpdateScore();
     }
     void Update () {
@@ -46,6 +48,7 @@ public class EnemySpawner : MonoBehaviour {
     public void AddScore(int newScoreValue)
     {
         score += newScoreValue;
+        myscore.score = score;
         UpdateScore();
     }
     void UpdateScore ()
